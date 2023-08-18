@@ -1,0 +1,1 @@
+A collection of my attempts of [projecteuler.net](https://projecteuler.net/about) questions. I typically use Python although any language will work. I highly recommend attempting problems before viewing my solution.

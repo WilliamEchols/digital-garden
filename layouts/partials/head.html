@@ -98,6 +98,7 @@
   "md5" | resources.Minify | }} {{$contentIndex := resources.Get
   "indices/contentIndex.json" | resources.Fingerprint "md5" | resources.Minify
   }}
+  
   <script>
     const SEARCH_ENABLED = {{.Site.Data.config.search.enableSemanticSearch}}
     const LATEX_ENABLED = {{.Site.Data.config.enableLatex}}
@@ -121,7 +122,6 @@
 
       const render = () => {
       // NOTE: everything within this callback will be executed for every page navigation. This is a good place to put JavaScript that loads or modifies data on the page, adds event listeners, etc. If you are only dealing with basic DOM replacement, use the init function
-
       const siteBaseURL = new URL(BASE_URL);
       const pathBase = siteBaseURL.pathname;
       const pathWindow = window.location.pathname;
@@ -227,8 +227,7 @@
     };
   </script>
   {{if $data.enableSPA | default $.Site.Data.config.enableSPA}}
-  {{ $router := resources.Get "js/router.js" | resources.Fingerprint "md5" |
-  resources.Minify }}
+  {{ $router := resources.Get "js/router.js" | resources.Fingerprint "md5" | resources.Minify }}
   <script type="module">
     import { attachSPARouting } from "{{$router.Permalink}}"
     attachSPARouting(init, render)

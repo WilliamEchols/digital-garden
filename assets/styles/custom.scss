@@ -1,5 +1,6 @@
-// Add your own CSS here!
+// themes
 
+/*
 :root {
   --light: #faf8f8;
   --dark: #141021;
@@ -25,7 +26,69 @@
   --lightgray: #292633 !important;
   --outlinegray: #343434 !important;
   --highlighted: #574010;
+}*/
+
+:root {
+  --light: #F5F5F5;
+  --dark: #1c1c1c;
+  --secondary: #16A085;
+  --tertiary: #A2A2A2;
+  --visited: var(--tertiary); // #9B59B6
+  --primary: #2C3E50;
+  --gray: #606a6b;
+  --lightgray: #d8dee3;
+  --outlinegray: #E0E0E0;
+  --million-progress-bar-color: #828282; // var(--secondary)
+  --highlighted: #F39C12;
 }
 
+[saved-theme="dark"] {
+  --light: #1c1c1c;
+  --dark: #F5F5F5;
+  --secondary: #1ABC9C;
+  --tertiary: #5D5D5D;
+  --visited: var(--tertiary); // #D2527F
+  --primary: #BDC3C7;
+  --gray: #828282;
+  --lightgray: #4A4A4A;
+  --outlinegray: #2C2C2C;
+  --million-progress-bar-color: #828282; // var(--secondary)
+  --highlighted: #F1C40F;
+}
 
+// color picker
 
+#color-picker {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+#color-picker label {
+  font-size: 14px;
+  margin-right: 10px;
+  //color: var(--dark);
+}
+
+#color-picker input[type="color"] {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  //box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#color-picker input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+#color-picker input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+#secondary-color {
+  padding: 0; // outside circle, padding: 0 or background: #color
+}

@@ -1,9 +1,13 @@
-// Replace this with your own font imports!
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap');
 :root {
   --font-body: "Source Sans Pro", sans-serif;
   --font-header: "Inter", sans-serif;
   --font-mono: "Fira Code", monospace;
+}
+
+* {
+  overscroll-behavior-y: none; // over scroll
+  color: var(--primary); // covers LaTeX
 }
 
 // typography
@@ -20,11 +24,55 @@ html {
   }
 }
 
+// external link icon
+a[href^="http://"]:not([href*="localhost"]),
+a[href^="https://"]:not([href*="williamechols.com"]) {
+  position: relative;
+  padding-right: 15px !important;
+}
+a[href^="http://"]:not([href*="localhost"])::after,
+a[href^="https://"]:not([href*="williamechols.com"])::after {
+  content: "";
+  background: url(https://static.thenounproject.com/png/1579467-200.png) center right no-repeat;
+  background-size: 15px 15px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+[saved-theme="dark"] a[href^="http://"]:not([href*="localhost"])::after,
+[saved-theme="dark"] a[href^="https://"]:not([href*="williamechols.com"])::after {
+  filter: invert(1);
+}
+
+
+
+.sidebar {
+  position: fixed;
+  left: 6em;
+  top: 6.7em;
+  width: 200px;
+  height: 100%;
+  padding: 1em;
+  background-color: var(--light);
+  overflow: auto; // allows scrolling if content exceeds height
+
+  text-align: end;
+
+  @media all and (max-width: 1000px) {
+    display: none;
+  }
+}
+
 .singlePage {
-  padding: 4em 30vw;
+  margin-left: 220px; // make room for the sidebar
+  padding: 4em 22em; // fixed padding value
   margin: 0 auto;
   max-width: 1000px;
-  @media all and (max-width: 1200px) {
+
+  @media all and (max-width: 1000px) {
     padding: 25px 5vw;
   }
 }

@@ -1,27 +1,32 @@
 ---
-title: 🪴 Quartz 3.3
-enableToc: false
+title: "Home"
+date: "2023-08-15"
 ---
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+Hey, I'm William. This is my version of what is called a [[notes/Digital Garden|Digital Garden]]. If you are unfamiliar,
 
-1. Extremely fast natural-language [[notes/search]]
-2. Customizable and hackable design based on [Hugo](https://gohugo.io/)
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in [[notes/CJK + Latex Support (测试) | CJK + Latex Support]] and [[notes/callouts | Admonition-style callouts]]
-5. Support for both Markdown Links and Wikilinks
+> _A digital garden is an online space at the intersection of a notebook and a blog, where digital gardeners share seeds of thoughts to be cultivated in public._ [Ness labs](https://nesslabs.com/digital-garden-set-up#:~:text=A%20digital%20garden%20is%20an,to%20be%20cultivated%20in%20public.)
 
-Check out some of the [amazing gardens that community members](notes/showcase.md) have published with Quartz or read about [why I made Quartz](notes/philosophy.md) to begin with.
+In essence, it is a personal wiki designed for messy exploration of interlinked topics in order to prioritize effective learning.
 
-## Get Started
-> 📚 Step 1: [Setup your own digital garden using Quartz](notes/setup.md)
+If you were looking for my put-together and professional web presence, you can find that here: [https://people.tamu.edu/~williamechols](https://people.tamu.edu/~williamechols/#).
 
-Returning user? Figure out how to [[notes/updating|update]] your existing Quartz garden.
+Explanation regarding my note taking platform can be found at [[notes/Obsidian|Obsidian]].
 
-If you prefer browsing the contents of this site through a list instead of a graph, you see a list of all [setup-related notes](/tags/setup).
+<center><h1>Note About Publishing</h1></center>
 
-### Troubleshooting
-- 🚧 [Troubleshooting and FAQ](notes/troubleshooting.md)
-- 🐛 [Submit an Issue](https://github.com/jackyzha0/quartz/issues)
-- 👀 [Discord Community](https://discord.gg/cRFFHYye7t)
+> I often use [[notes/MOC|MOC]]s to conveniently categorize my notes and then use [[notes/Dataview (plugin)|Dataview (plugin)]] to dynamically load notes based on their attributes; however, plugins are not (yet) web compatible so pages make appear broken. An easy solution is to use the graph view on the bottom of each note to navigate to connected pages (both links and [[notes/backlinks|backlinks]] to the current note) and also view.
 
+<center><h1>Reading / Researching / Recents</h1></center>
+
+## Reading
+
+![[notes/Currently Reading|Currently Reading]]
+
+## Researching
+
+[[notes/Playing with Math|Playing with Math]]
+
+[[notes/Look Into|Look Into]]
+
+[[notes/Project Euler/Project Euler MOC|Project Euler MOC]]

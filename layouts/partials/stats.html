@@ -1,0 +1,7 @@
+<h2>Site Stats</h2>
+<p>{{ len .Site.Pages }} notes | {{ len .Site.Taxonomies.tags }} <a href="tags/">tags</a> | Updated {{ .Site.LastChange.Format "January 2, 2006" }}</p>
+
+
+{{ range $key, $value := .Site.Taxonomies.tags }}
+    <a href="{{ `tags/` | relLangURL }}{{ $key | urlize }}">{{ $key }}</a>
+{{ end }}

@@ -1,0 +1,12 @@
+<div class="sidebar">
+    <h3>Topics <a href="tags/">[{{ len .Site.Taxonomies.tags }}]</a></h3>
+    <p>
+    {{ range $key, $value := .Site.Taxonomies.tags }}
+        <a href="{{ `tags/` | relLangURL }}{{ $key | urlize }}">{{ $key }}</a>
+    {{ end }}
+    </p>
+
+    <h3>Info</h3>
+    <p>{{ len .Site.Pages }} notes</p>
+    <p>Updated {{ .Site.LastChange.Format "January 2, 2006" }}</p>
+</div>

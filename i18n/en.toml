@@ -1,8 +1,8 @@
 [404_message]
-other = "Hey! You look a little lost. This page doesn't exist (or may be private)."
+other = "This page doesn't exist (or it may be private)."
 
 [404_back]
-other = "↳ Let's get you home."
+other = "↳ Return home"
 
 [all_posts]
 other = "All {{.Title}}"
@@ -17,7 +17,7 @@ other = "notes with this tag"
 other = "showing first 10 results"
 
 [tag]
-other = "Tag"
+other = "Topic"
 
 [backlinks]
 other = "Backlinks"
@@ -47,7 +47,7 @@ other = "Search"
 other = "Search Icon"
 
 [icon_search]
-other = "Icon to open search"
+other = "s"
 
 [recent_notes]
 other = "Recent Notes"
@@ -62,4 +62,4 @@ other = "Search for something..."
 other = "Table of Contents"
 
 [copyright]
-other = "Made by {{ .name }} using <a href=\"https://github.com/jackyzha0/quartz\">Quartz</a>, © {{ .year }}"
+other = "Made by {{ .name }} using <a href=\"/notes/Obsidian\">Obsidian</a> and <a href=\"/notes/Hugo\">Hugo</a>"
